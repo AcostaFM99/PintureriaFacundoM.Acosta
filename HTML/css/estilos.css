@@ -1,0 +1,198 @@
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+.contenedorLogo{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: start;
+}
+
+.logo{
+    width: 80px;
+    margin: 0;
+}
+
+
+.header {
+
+        background-image: linear-gradient(to top, #8e5d65,#b3374c);
+        color: white;
+        width:100%;
+        padding-top: 10px;
+}
+
+.header .navBar {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: end;
+
+}
+
+
+.navBar li{
+
+    display: inline;
+    margin: 0px 3px ;
+    
+}
+
+a {
+    color: aliceblue;
+    text-decoration: none;
+
+}
+
+a:hover{
+    border: 1px solid black;
+}
+
+.contenido{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.footer{
+    background-image: linear-gradient(to top, #8e5d65,#b3374c);    
+    color: white;
+
+}
+
+.footer ul{
+    margin: 0;
+
+}
+
+
+
+.footer ul li{
+    display: inline;
+}
+
+
+.colorLinks{
+
+        color: rgb(38, 38, 187);
+
+}
+
+
+
+
+.contenedorCard{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.card { 
+
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+}
+
+.card:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+
+}
+.card:active{
+    border: solid black 1px;
+}
+
+.filtro {
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+    margin: 20px;
+
+}
+
+.filtro .filtroListas {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+}
+
+.gridHome{
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "ProductosDestacados ProductosDestacados ProductosDestacados"
+    "footer  footer footer";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 17em 1fr 8em;
+    grid-row-gap: 3%;
+
+    }
+
+    .header{
+        grid-area: header;
+    }
+    .carrucel{
+        grid-area: carrucel;
+    }
+    .ProductosDestacados{
+        grid-area: ProductosDestacados;
+    }
+    .carrucel2{
+        grid-area: carrucel2;
+    }
+    .footer{
+        grid-area: footer;
+    }
+
+.gridProductos {
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "filtro filtro filtro"
+    "contenedorCard contenedorCard contenedorCard"
+    "footer footer footer" ;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 17em 11em 1fr 8em;
+    grid-row-gap: 3%;
+    }
+    .header{
+        grid-area: header;
+    }
+    .filtro{
+        grid-area: filtro;
+    }
+    .contenedorCard{
+        grid-area: contenedorCard;
+    }
+    .footer{
+        grid-area: footer;
+    }
+
+    .botonMenu{
+        display: none;
+    }
+
+@media screen and (max-width: 768px ){
+    .header .navBar{
+        display: flex;
+        justify-content: space-between;
+        flex-flow: wrap row;
+        font-size: 20   px;
+    }
+    .header .navBar ul li {
+        border: solid black 1px;
+        margin: 10px;
+    }
+    .ContenedorLogo{
+        display: none;
+    }
+    
+
+}
