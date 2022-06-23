@@ -7,33 +7,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel=StyleSheet href="../css/estilos.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    
 
     <title>Diseños</title>
 
 </head>
-    <header class="header">
-        <h1 class="header__logo"><img src="./../imagenes/posible1LOGO.jpg" class="logo"> Pintureria BROS <br /><h3>Para gustos nuestros colores</h3></h1>
-        
-        <nav class="navBar">
 
-            <ul>
-                <li><a href="../../index.html">Home</a></li>
-                <li><a href="./productos.html">Productos</a></li>
-                <li><a href="./contact.html">Te contactamos</a></li>
-                <li><a href="./diseños.html">Inspirate</a></li>
-                <li><a href="./about.html">Sobre Nosotros</a></li>
-                <li><a href="https://www.instagram.com/pinturerias.bro/" target="_blank">Contactanos via instagram</a></li>
-           
-            </ul>
-        </nav>
-
-        
-    </header>
 
 <body background="./../imagenes/fondo2.jpg">      
     
 
-    <article>
+
+    <header class="header container-fluid">
+        <div class="row">
+            <div class="col-xl-6 ">
+    
+                    <div class="contenedorLogo">
+                        <h1 class="header__logo"><img src="./../imagenes/posible1LOGO.jpg" class="logo"> Pintureria BROS <br /><h3>Para gustos nuestros colores</h3></h1>
+                    </div>
+    
+    
+            </div>
+                <nav class="navBar col-xl-6">  
+                    
+                    <ul  >
+    
+                        <li><a  class="colorLinks" href="../../index.html">Home</a></li>
+                        <li><a  class="colorLinks" href="./productos.html">Productos</a></li>
+                        <li><a  class="colorLinks" href="./contact.html">Te contactamos</a></li>
+                        <li><a  class="colorLinks" href="./diseños.html">Inspirate</a></li>
+                        <li><a  class="colorLinks" href="./about.html">Sobre Nosotros</a></li>
+                        <li><a  class="colorLinks" href="https://www.instagram.com/pinturerias.bro/" target="_blank">Contactanos via instagram</a></li>
+                
+                    </ul>
+                </nav>
+            </div>
+    </header>
+
+
+
+
+    <article class="container-fluid">
 
 
         <h3>Para gustos nuestros colores</h3>
@@ -41,22 +56,31 @@
         <p>Este es un parrafo explicativo, en esta seccion de la pagia iria una seccion de inspiracion con modelos de habitaciones y colores</p>
         <br/>
         <hr/>
-        <p >Idea tomada de <a class="colorLinks" href="https://www.alba.com.ar/es/inspiracion-con-colores">Alba</a></p>
+        <p >Idea tomada de <a href="https://www.alba.com.ar/es/inspiracion-con-colores">Alba</a></p>
 
 
     </article>
 
-    <div id="foterDeDiseños"></div>
 
 
-    <footer class="footer">
-        <ul>
-		    <li><img src="./../imagenes/posible1LOGO.jpg" class="logo" > Pintureria BROS</li>
-            <br />
-		    <li><a href="https://www.instagram.com/pinturerias.bro/" target="_blank">Instagram</a></li>
-        </ul>
-    </footer>
 
+
+
+        <footer class="footer container-fluid">
+            <div class="row">
+                <div class="col-xl-10">
+                    <ul>
+                        <li><img src="./../imagenes/posible1LOGO.jpg" class="logo" > Pintureria BROS</li>
+                        
+                    </ul>
+                </div>
+                <div class="col-xl-2">
+                    <ul>
+                        <li><a class="colorLinks" href="https://www.instagram.com/pinturerias.bro/" target="_blank">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
 
 
 
@@ -68,7 +92,7 @@
     <script>
        new WOW().init();
     </script>
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous" ></script>
 </body>
 
 

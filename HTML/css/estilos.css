@@ -22,10 +22,8 @@ html{
 
 
 .header {
-
         background-image: linear-gradient(to top, #8e5d65,#b3374c);
         color: white;
-        width:100%;
         padding-top: 10px;
 }
 
@@ -33,12 +31,10 @@ html{
     display: flex;
     flex-flow: row wrap;
     justify-content: end;
-
 }
 
 
 .navBar li{
-
     display: inline;
     margin: 0px 3px ;
     
@@ -52,6 +48,7 @@ a {
 
 a:hover{
     border: 1px solid black;
+    color: aliceblue;
 }
 
 .contenido{
@@ -59,18 +56,19 @@ a:hover{
     flex-direction: column;
     flex: 1;
 }
+
 .footer{
     background-image: linear-gradient(to top, #8e5d65,#b3374c);    
     color: white;
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
 
 }
 
-.footer ul{
-    margin: 0;
-
+.Footer{
+    margin-top: 10px;
 }
-
-
 
 .footer ul li{
     display: inline;
@@ -79,17 +77,16 @@ a:hover{
 
 .colorLinks{
 
-        color: rgb(38, 38, 187);
+        color: white;
 
 }
-
-
 
 
 .contenedorCard{
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+
 }
 .card { 
 
@@ -123,76 +120,60 @@ a:hover{
     list-style-type: none;
 }
 
-.gridHome{
-    display: grid;
-    grid-template-areas: 
-    "header header header"
-    "ProductosDestacados ProductosDestacados ProductosDestacados"
-    "footer  footer footer";
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 17em 1fr 8em;
-    grid-row-gap: 3%;
+.botonMenu{
+    display: none;
+}
 
-    }
+.articulo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-    .header{
-        grid-area: header;
-    }
-    .carrucel{
-        grid-area: carrucel;
-    }
-    .ProductosDestacados{
-        grid-area: ProductosDestacados;
-    }
-    .carrucel2{
-        grid-area: carrucel2;
-    }
-    .footer{
-        grid-area: footer;
-    }
-
-.gridProductos {
-    display: grid;
-    grid-template-areas: 
-    "header header header"
-    "filtro filtro filtro"
-    "contenedorCard contenedorCard contenedorCard"
-    "footer footer footer" ;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 17em 11em 1fr 8em;
-    grid-row-gap: 3%;
-    }
-    .header{
-        grid-area: header;
-    }
-    .filtro{
-        grid-area: filtro;
-    }
-    .contenedorCard{
-        grid-area: contenedorCard;
-    }
-    .footer{
-        grid-area: footer;
-    }
-
-    .botonMenu{
-        display: none;
-    }
 
 @media screen and (max-width: 768px ){
     .header .navBar{
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
         flex-flow: wrap row;
-        font-size: 20   px;
+        font-size: 20px;
     }
-    .header .navBar ul li {
-        border: solid black 1px;
-        margin: 10px;
-    }
-    .ContenedorLogo{
+
+    div .contenedorLogo{
         display: none;
     }
-    
+
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
