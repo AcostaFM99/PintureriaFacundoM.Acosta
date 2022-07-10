@@ -1,0 +1,20 @@
+$estilosFooter(
+
+    fondo: linear-gradient(to top, #8e5d65,#b3374c),
+    color: white,
+
+);
+@mixin estiloFooter($margin,$padding, $width) {
+
+    margin : $margin;
+    padding : $padding;
+    width: $width;
+
+}
+
+.footer {
+    @include estiloFooter(0%, 0%, 100%);
+    background-image: map-get($estilosFooter, fondo );    
+    color: map-get($estilosFooter, color );
+
+}

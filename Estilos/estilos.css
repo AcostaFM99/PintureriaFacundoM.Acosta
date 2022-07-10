@@ -19,37 +19,7 @@
   border: solid black 1px;
 }
 
-.filtro {
-  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
-  overflow: hidden;
-}
-.filtro li {
-  float: left;
-}
-.filtro li:hover > ul {
-  display: block;
-}
-.filtro li ul {
-  display: none;
-}
-.filtro li a {
-  background-color: rgba(0, 0, 0, 0.863);
-  color: white;
-  text-decoration: none;
-  padding: 10px 13px;
-  display: block;
-}
-.filtro li a:hover {
-  background-color: #434343;
-}
-.filtro .filtroListas {
-  display: flex;
-  flex-direction: column;
-  list-style-type: none;
-}
-.filtro .filtroListas .filtroSubMenu {
-  list-style-type: none;
-}
+
 
 a:hover {
   border: 1px solid black;

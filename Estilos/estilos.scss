@@ -3,7 +3,10 @@
 @import "./_header";
 
 
-
+body{
+    
+    background: url(../imagenes/fondo2.jpg);
+}
 
 @media screen and (max-width: 768px ){ 
     .header {
