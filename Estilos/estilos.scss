@@ -1,32 +1,16 @@
-@import "./_contenido";
-@import "./_footer";
-@import "./_header";
+@import "./__contenido";
+@import "./__footer";
+@import "./__header";
 
 
 body{
     
-    background: url(../imagenes/fondo2.jpg);
+    background-image: url(../imagenes/ESTEFONFO.jpg);
 }
 
-@media screen and (max-width: 768px ){ 
-    .header {
-        
-        .navBar{ 
 
-        display: flex; 
-        justify-content: space-evenly; 
-        flex-flow: wrap row; 
-        font-size: 20px; 
-    
-    } 
-}
-        
-            .contenedorLogo { 
-                display: none;
-            } 
-        
-    
-}
+
+
 
 
 html{ font-family: Georgia, 'Times New Roman', Times, serif; }
@@ -39,4 +23,8 @@ body{
     padding: 0px;
 }
 
-
+.contenedorDeContacto{
+    margin-top: 100px ;
+    margin-bottom: 300px;
+  
+  }

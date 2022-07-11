@@ -19,17 +19,73 @@
   border: solid black 1px;
 }
 
-
-
-a:hover {
-  border: 1px solid black;
-  color: white;
-}
-
 .articulo {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+.contenedorDeContacto {
+  margin-top: 150px;
+  margin-bottom: 300px;
+}
+
+.contenedorTitulo {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-flow: row wrap;
+}
+.contenedorTitulo .tituloIlus {
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-family: "Hind Siliguri", sans-serif;
+}
+
+.ContenedorImagenesIlus .imagenesIlustrativas {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.ContenedorImagenesIlus .imagenesIlustrativas .imagenesDimesion {
+  margin: 1rem;
+  width: 300px;
+  height: 350px;
+}
+.ContenedorImagenesIlus .imagenesIlustrativas .imagenesDimesion:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+.ContenedorImagenesIlus .imagenesIlustrativas .imagenesDimesion:active {
+  border: solid black 1px;
+}
+
+.contenedorDeTitulos {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  text-align: center;
+  font-family: "Hind Siliguri", sans-serif;
+  margin: 3%;
+}
+
+.contenedorImgParrafo {
+  display: flex;
+  justify-content: center;
+}
+.contenedorImgParrafo .parrafo {
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 768px) {
+  .contenedorImgParrafo .contenedorDeImagen {
+    display: none;
+  }
+}
+.contenedorImgParrafo .contenedorDeImagen img {
+  margin-bottom: 30%;
+  width: 80%;
 }
 
 .footer {
@@ -52,6 +108,11 @@ a:hover {
   display: flex;
   flex-flow: column wrap;
   justify-content: start;
+}
+@media screen and (max-width: 768px) {
+  .header .contenedorLogo {
+    display: none;
+  }
 }
 .header .contenedorLogo .logo {
   width: 80px;
@@ -86,17 +147,10 @@ a {
   display: none;
 }
 
-@media screen and (max-width: 768px) {
-  .header .navBar {
-    display: flex;
-    justify-content: space-evenly;
-    flex-flow: wrap row;
-    font-size: 20px;
-  }
-  .contenedorLogo {
-    display: none;
-  }
+body {
+  background-image: url(../imagenes/ESTEFONFO.jpg);
 }
+
 html {
   font-family: Georgia, "Times New Roman", Times, serif;
 }
@@ -106,6 +160,11 @@ body {
   flex-direction: column;
   margin: 0px;
   padding: 0px;
+}
+
+.contenedorDeContacto {
+  margin-top: 100px;
+  margin-bottom: 300px;
 }
 
 /*# sourceMappingURL=estilos.css.map */

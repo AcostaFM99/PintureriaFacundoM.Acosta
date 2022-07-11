@@ -4,6 +4,11 @@
     color: white;
     padding-top: 10px;
     .contenedorLogo{
+
+
+        @media screen and (max-width: 768px ){ 
+            display: none;
+        }
         display: flex;
         flex-flow: column wrap;
         justify-content: start;
@@ -15,6 +20,9 @@
     }
 
     .navBar {
+        @media screen and (max-width: 768px ){ 
+
+        }
         display: flex;
         flex-flow: row wrap;
         justify-content: end;

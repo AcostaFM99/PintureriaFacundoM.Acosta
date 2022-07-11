@@ -4,6 +4,8 @@ $estilosFooter(
     color: white,
 
 );
+
+
 @mixin estiloFooter($margin,$padding, $width) {
 
     margin : $margin;
@@ -18,3 +20,4 @@ $estilosFooter(
     color: map-get($estilosFooter, color );
 
 }
+
