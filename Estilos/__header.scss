@@ -30,15 +30,18 @@
         li{
             display: inline;
             margin: 0px 3px ;
-            
+                a{
+                    color: aliceblue;
+                }
+            &:hover{
+                border: solid 1px black;
+            }
         }
+
     }
 }
 
-a {
-    color: aliceblue;
-    text-decoration: none;
-}
+
 .contenido{
     display: flex;
     flex-direction: column;

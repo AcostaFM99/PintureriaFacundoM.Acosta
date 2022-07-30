@@ -6,8 +6,16 @@
     width: 100%;
 
     ul {
-
-        li{ display: inline; }
+        
+        li{ display: inline; 
+            
+            .logoFooter{
+                text-align: left;
+                margin-top: 5px;
+                width: 2.5rem;
+                height: 2.5rem;
+            }
+        }
 
     }
 

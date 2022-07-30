@@ -88,6 +88,10 @@
   width: 80%;
 }
 
+.filtro {
+  margin: 1rem;
+}
+
 .footer {
   background-image: linear-gradient(to top, #8e5d65, #b3374c);
   color: white;
@@ -97,6 +101,12 @@
 }
 .footer ul li {
   display: inline;
+}
+.footer ul li .logoFooter {
+  text-align: left;
+  margin-top: 5px;
+  width: 2.5rem;
+  height: 2.5rem;
 }
 
 .header {
@@ -127,10 +137,11 @@
   display: inline;
   margin: 0px 3px;
 }
-
-a {
+.header .navBar li a {
   color: aliceblue;
-  text-decoration: none;
+}
+.header .navBar li:hover {
+  border: solid 1px black;
 }
 
 .contenido {
@@ -147,8 +158,12 @@ a {
   display: none;
 }
 
-body {
+.body {
   background-image: url(../imagenes/abstract-999662.jpg);
+}
+
+.fondo {
+  background-image: url(../imagenes/fondo.jpg);
 }
 
 html {
@@ -165,6 +180,10 @@ body {
 .contenedorDeContacto {
   margin-top: 100px;
   margin-bottom: 300px;
+}
+
+section .tituloDise {
+  color: rgb(255, 255, 255);
 }
 
 /*# sourceMappingURL=estilos.css.map */
