@@ -4,11 +4,21 @@
     margin: 0%;
     padding: 0%;
     width: 100%;
-
+   
+    .imgFooter{
+        display: flex;
+        justify-content: start;
+        align-content: center;
+        align-items: center;
+        img{
+            margin-top: 10px;
+        }
+    }
     ul {
         
         li{ display: inline; 
             
+           
             .logoFooter{
                 text-align: left;
                 margin-top: 5px;
