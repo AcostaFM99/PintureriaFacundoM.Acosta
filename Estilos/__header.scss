@@ -20,23 +20,24 @@
     }
 
     .navBar {
-        @media screen and (max-width: 768px ){ 
-
-        }
         display: flex;
-        flex-flow: row wrap;
-        justify-content: end;
+        justify-content: flex-end;
+        @media screen and (max-width: 768px ){}
 
-        li{
-            display: inline;
-            margin: 0px 3px ;
-                a{
-                    color: aliceblue;
+        ul{
+
+            li{
+                display: inline;
+                margin: 0px 3px ;
+                    a{
+                        color: aliceblue;
+                    }
+                &:hover{
+                    border: solid 1px black;
                 }
-            &:hover{
-                border: solid 1px black;
             }
         }
+
 
     }
 }
